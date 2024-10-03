@@ -19,7 +19,7 @@
     <?php if (count($coincidences) > 0) { ?>
         <p>
             <?php foreach ($coincidences as $coincidence) { ?>
-                La paraula <?php echo $coincidence; ?> està a les dues frases.
+                La paraula <?php echo $coincidence; ?> està a les dues frases. <br>
             <?php } ?>
         </p>
     <?php } else { ?>
