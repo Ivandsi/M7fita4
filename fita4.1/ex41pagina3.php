@@ -28,7 +28,6 @@
             <p><a href="ex41pagina1.php">Tornar a començar</a></p>
         <?php
         } else {
-            // Si no es igual, mostramos un mensaje y volvemos a mostrar el formulario
             if ($endevina < $ocult) {
                 $mensaje = "El número que has introduït és menor que el número ocult.";
             } else {
