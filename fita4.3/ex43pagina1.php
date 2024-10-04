@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fita 4 - Exercici 3</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@ if (isset($_GET['reset'])) {
     }
 }
 
-if(isset($_GET['space'])) {
+if (isset($_GET['space'])) {
     if ($_GET['space'] == 'true') {
         $_SESSION['letters'] .= " ";
     }
@@ -58,17 +58,17 @@ $_SESSION['letters'] .= $letter;
             padding: 10px;
             text-align: center;
             text-decoration: none;
-            color:blue;
+            color: blue;
             background-color: #f2f2f2;
         }
 
         .keyboard a:hover {
-            color:red;
+            color: red;
             background-color: #c7f2f2;
         }
 
         .keyboard a:active {
-            color:blue;
+            color: blue;
             background-color: #f2f2f2;
         }
     </style>
@@ -77,7 +77,7 @@ $_SESSION['letters'] .= $letter;
 <body>
     <h2>Lletres acumulades:</h2>
     <p><?php echo $_SESSION['letters']; ?></p>
-    
+
     <h2>Teclat virtual</h2>
     <div class="keyboard">
         <?php for ($i = 97; $i <= 122; $i++) { ?>
@@ -86,7 +86,7 @@ $_SESSION['letters'] .= $letter;
         <a href="?space=true">Espai en blanc</a>
         <a href="?reset=true">Limpiar</a>
     </div>
-    
+
 
 
 </body>
